@@ -34,6 +34,18 @@ which produces an executable, `kaprekarTestCmocka`.  This will only work if you 
 
 Only after you have corrected all of the problems (both syntax errors as well as logic errors) will everything compile and the test suite reach 100%
 
+## C Version Fixes
+
+In kaprekarUtils.c changed 'return false;' to 'return 0;' @line 28
+
+In kaprekarUtils.c changed 'numberOfDigits' to 'numDigits' @line 40
+
+In kaprekarUtils.c changed 'n = first + second' to 'n == first + second' @line 41
+
+In kaprekarUtil.c changed modulus value to 'pow(10, i)' @ line 42
+
+In kaprekarUtil.c changed condition to 'i <= numDigits + 2' @ line 40
+
 ### Java Version
 
 Code for the Java version is in `src` directory.  However, the project is setup as an Eclipse project so you should clone the repo via Eclipse if you want the build to work.
